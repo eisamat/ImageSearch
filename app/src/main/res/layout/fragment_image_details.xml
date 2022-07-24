@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.details.ImageDetailsFragment">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/baseline_person_24"
+            app:layout_constraintStart_toStartOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/image"
+            app:tint="?colorOnSurface" />
+
+        <TextView
+            android:id="@+id/userLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/userIcon"
+            app:layout_constraintEnd_toEndOf="@+id/image"
+            app:layout_constraintStart_toEndOf="@+id/userIcon"
+            app:layout_constraintTop_toTopOf="@+id/userIcon" />
+
+        <ImageView
+            android:id="@+id/tagsIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/baseline_bookmarks_24"
+            app:layout_constraintStart_toStartOf="@+id/userIcon"
+            app:layout_constraintTop_toBottomOf="@+id/userIcon"
+            app:tint="?colorOnSurface" />
+
+        <TextView
+            android:id="@+id/tagLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tagsIcon"
+            app:layout_constraintEnd_toEndOf="@+id/image"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tagsIcon"
+            app:layout_constraintTop_toTopOf="@+id/tagsIcon" />
+
+        <ImageView
+            android:id="@+id/likesIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/baseline_thumb_up_24"
+            app:layout_constraintStart_toStartOf="@+id/tagsIcon"
+            app:layout_constraintTop_toBottomOf="@+id/tagsIcon"
+            app:tint="?colorOnSurface" />
+
+        <TextView
+            android:id="@+id/likesLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/likesIcon"
+            app:layout_constraintEnd_toEndOf="@+id/image"
+            app:layout_constraintStart_toEndOf="@+id/likesIcon"
+            app:layout_constraintTop_toTopOf="@+id/likesIcon" />
+
+        <ImageView
+            android:id="@+id/downloadIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/baseline_download_24"
+            app:layout_constraintStart_toStartOf="@+id/likesIcon"
+            app:layout_constraintTop_toBottomOf="@+id/likesIcon"
+            app:tint="?colorOnSurface" />
+
+        <TextView
+            android:id="@+id/downloadLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/downloadIcon"
+            app:layout_constraintEnd_toEndOf="@+id/image"
+            app:layout_constraintStart_toEndOf="@+id/downloadIcon"
+            app:layout_constraintTop_toTopOf="@+id/downloadIcon" />
+
+        <ImageView
+            android:id="@+id/commentIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/baseline_comment_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/downloadIcon"
+            app:layout_constraintTop_toBottomOf="@+id/downloadIcon"
+            app:layout_constraintVertical_bias="0.0"
+            app:tint="?colorOnSurface" />
+
+        <TextView
+            android:id="@+id/commentLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/commentIcon"
+            app:layout_constraintEnd_toEndOf="@+id/image"
+            app:layout_constraintStart_toEndOf="@+id/commentIcon"
+            app:layout_constraintTop_toTopOf="@+id/commentIcon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
